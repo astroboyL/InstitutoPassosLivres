@@ -33,9 +33,9 @@ export const apoiadoresData = [
       texto: "O grupo 'Mais Trilha, Menos Estresse' acredita que pisar na terra úmida, ouvir o som de uma cachoeira e respirar o ar puro do topo de uma montanha tem o poder de curar qualquer angústia. Eles tiram os jovens do asfalto quente e da dura realidade das ruas para mostrar-lhes a imensidão do mundo natural.",
       membros: [
         {
-          nome: "Lívia",
+          nome: "Nívia",
           papel: "Guia de Expedições e Educadora Ambiental",
-          historia: "Lívia conduz os jovens por matas fechadas e trilhas íngremes. Em uma das expedições a uma cachoeira remota, um garoto que nunca havia saído do seu bairro periférico chorou ao ver a queda d'água pela primeira vez. Lívia não apenas ensina a preservar a floresta; ela usa as montanhas para mostrar a essas crianças que o horizonte delas não tem limites.",
+          historia: "Nívia conduz os jovens por matas fechadas e trilhas íngremes. Em uma das expedições a uma cachoeira remota, um garoto que nunca havia saído do seu bairro periférico chorou ao ver a queda d'água pela primeira vez. Nívia não apenas ensina a preservar a floresta; ela usa as montanhas para mostrar a essas crianças que o horizonte delas não tem limites.",
           foto: "/image/Apoiadores/mais_trilha_menos_estresse/Guia/WhatsApp Image 2026-06-26 at 10.28.20.jpeg"
         }
       ]
