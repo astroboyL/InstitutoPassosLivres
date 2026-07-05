@@ -50,13 +50,7 @@ export default function ApoiadorDetalhe() {
           {apoio.detalhes.membros && apoio.detalhes.membros.length > 0 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '60px', marginTop: '40px' }}>
               {apoio.detalhes.membros.map((membro: any, idx: number) => (
-                <div key={idx} style={{ 
-                  display: 'flex', 
-                  flexDirection: idx % 2 === 0 ? 'row' : 'row-reverse',
-                  gap: '40px',
-                  alignItems: 'center',
-                  flexWrap: 'wrap'
-                }}>
+                <div key={idx} className={idx % 2 === 0 ? 'membro-row' : 'membro-row-reverse'}>
                   <div style={{ 
                     flex: '1 1 300px', 
                     borderRadius: 'var(--radius-lg)', 

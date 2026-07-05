@@ -12,7 +12,7 @@ export default function Apoiadores() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '40px', paddingBottom: '100px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px', paddingBottom: '100px' }}>
           {apoiadoresData.map((apoio) => (
             <Link 
               key={apoio.id} 
