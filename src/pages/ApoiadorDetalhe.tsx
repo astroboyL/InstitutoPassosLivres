@@ -18,9 +18,9 @@ export default function ApoiadorDetalhe() {
   }
 
   return (
-    <main style={{ backgroundColor: 'var(--c-bg)', minHeight: '100vh', paddingBottom: '100px' }}>
+    <main style={{ backgroundColor: 'var(--c-bg)', minHeight: '100vh', paddingBottom: '100px', paddingTop: '120px' }}>
       {/* Cinematic Hero */}
-      <div style={{ position: 'relative', width: '100%', height: '60vh', minHeight: '400px', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', width: '100%', height: '50vh', minHeight: '400px', overflow: 'hidden', borderRadius: '0 0 40px 40px' }}>
         <div style={{
           position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
           backgroundImage: `url('${apoio.fotoCapa}')`,
