@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { apoiadoresData } from '../data/apoiadores';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Instagram, Globe, MessageCircle } from 'lucide-react';
 
 export default function ApoiadorDetalhe() {
   const { id } = useParams();
@@ -76,6 +76,30 @@ export default function ApoiadorDetalhe() {
                   </div>
                 </div>
               ))}
+            </div>
+          )}
+
+          {/* Social Links / Contact */}
+          {apoio.redesSociais && (
+            <div style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid rgba(0,0,0,0.05)', textAlign: 'center' }}>
+              <h3 style={{ fontSize: '1.4rem', color: 'var(--c-forest)', marginBottom: '20px' }}>Conheça mais e acompanhe</h3>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                {apoio.redesSociais.whatsapp && (
+                  <a href={apoio.redesSociais.whatsapp} target="_blank" rel="noopener noreferrer" className="btn" style={{ backgroundColor: '#25D366', color: 'white', display: 'flex', gap: '10px' }}>
+                    <MessageCircle size={20} /> Falar no WhatsApp
+                  </a>
+                )}
+                {apoio.redesSociais.instagram && (
+                  <a href={apoio.redesSociais.instagram} target="_blank" rel="noopener noreferrer" className="btn" style={{ backgroundColor: '#E1306C', color: 'white', display: 'flex', gap: '10px' }}>
+                    <Instagram size={20} /> Instagram
+                  </a>
+                )}
+                {apoio.redesSociais.site && (
+                  <a href={apoio.redesSociais.site} target="_blank" rel="noopener noreferrer" className="btn" style={{ backgroundColor: 'var(--c-forest)', color: 'white', display: 'flex', gap: '10px' }}>
+                    <Globe size={20} /> Visitar Site
+                  </a>
+                )}
+              </div>
             </div>
           )}
         </div>

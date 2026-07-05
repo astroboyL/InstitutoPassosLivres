@@ -4,6 +4,11 @@ export const apoiadoresData = [
     nome: "Psicólogos Voluntários", 
     descCurta: "Apoio emocional e resgate da autoestima.", 
     fotoCapa: "/image/Apoiadores/psicologos/Mulher.png",
+    redesSociais: {
+      whatsapp: "https://wa.me/5531000000000?text=Oi%20Quero%20saber%20mais%20sobre%20os%20psicólogos",
+      instagram: "https://www.instagram.com/institutopassoslivres/",
+      site: ""
+    },
     detalhes: {
       titulo: "Curando as Feridas que Ninguém Vê",
       texto: "Muitas das crianças que chegam ao Instituto Passos Livres carregam fardos pesados demais para suas idades. O abandono, a violência e a extrema pobreza deixam cicatrizes profundas. Nossa equipe de psicologia não oferece apenas terapia; eles oferecem um porto seguro onde essas almas feridas podem chorar, ser ouvidas e, lentamente, voltar a confiar no mundo.",
@@ -28,6 +33,11 @@ export const apoiadoresData = [
     nome: "Mais Trilha, Menos Estresse", 
     descCurta: "Exploração e cura através da natureza.", 
     fotoCapa: "/image/Apoiadores/mais_trilha_menos_estresse/logo/55C232D4-8B60-45C4-82BC-4B25960F8B60 Copy.JPG",
+    redesSociais: {
+      whatsapp: "https://wa.me/5531998793939?text=Oi%20N%C3%ADvea!%20Quero%20saber%20mais%20sobre%20o%20Mais%20Trilha!",
+      instagram: "https://www.instagram.com/maistrilhamenosestresse/",
+      site: "https://www.maistrilhasmenosestresse.com/"
+    },
     detalhes: {
       titulo: "A Natureza Como Refúgio e Liberdade",
       texto: "O grupo 'Mais Trilha, Menos Estresse' acredita que pisar na terra úmida, ouvir o som de uma cachoeira e respirar o ar puro do topo de uma montanha tem o poder de curar qualquer angústia. Eles tiram os jovens do asfalto quente e da dura realidade das ruas para mostrar-lhes a imensidão do mundo natural.",
@@ -46,6 +56,11 @@ export const apoiadoresData = [
     nome: "Escola de Futebol", 
     descCurta: "Disciplina, suor e sonhos no gramado.", 
     fotoCapa: "/image/Apoiadores/escola_de_futibool/Gemini_Generated_Image_3iqb1e3iqb1e3iqb.png",
+    redesSociais: {
+      whatsapp: "https://wa.me/5531000000000?text=Oi%20Quero%20saber%20mais%20sobre%20a%20Escola%20de%20Futebol",
+      instagram: "https://www.instagram.com/institutopassoslivres/",
+      site: ""
+    },
     detalhes: {
       titulo: "Onde o Jogo Vira Chance de Vida",
       texto: "Para muitos garotos, a bola é a única amiga. No campo esburacado, não importa o que eles sofrem em casa; ali, eles são iguais. A Escola de Futebol não cria apenas atletas, cria homens de honra, ensinando disciplina, respeito às regras e, principalmente, que para vencer na vida, é preciso trabalhar em equipe.",
@@ -64,6 +79,11 @@ export const apoiadoresData = [
     nome: "Artes Marciais (Luta)", 
     descCurta: "Foco, respeito e transformação interior.", 
     fotoCapa: "/image/Apoiadores/Luta/mulher_mestre.png",
+    redesSociais: {
+      whatsapp: "https://wa.me/5531000000000?text=Oi%20Quero%20saber%20mais%20sobre%20as%20Artes%20Marciais",
+      instagram: "https://www.instagram.com/institutopassoslivres/",
+      site: ""
+    },
     detalhes: {
       titulo: "A Força que Nasce da Calma",
       texto: "O tatame é sagrado. Jovens que chegavam cheios de raiva e agressividade, reflexo da violência que presenciavam em casa, aprenderam nas artes marciais que a verdadeira força está no autocontrole. A luta aqui não é para machucar o outro, é para derrotar os próprios medos.",
@@ -82,6 +102,11 @@ export const apoiadoresData = [
     nome: "Professores Dedicados", 
     descCurta: "O brilho nos olhos ao aprender a ler.", 
     fotoCapa: "/image/Apoiadores/Professores/professora.JPG",
+    redesSociais: {
+      whatsapp: "https://wa.me/5531000000000?text=Oi%20Quero%20saber%20mais%20sobre%20as%20Aulas",
+      instagram: "https://www.instagram.com/institutopassoslivres/",
+      site: ""
+    },
     detalhes: {
       titulo: "A Arma Mais Poderosa do Mundo",
       texto: "Muitas de nossas crianças chegam à adolescência sem saber escrever o próprio nome direito, engolidas pelas falhas do sistema. Nossos professores voluntários travam a mais nobre das batalhas: armados de lápis, papel e paciência infinita, eles resgatam cérebros e almas da escuridão do analfabetismo.",
