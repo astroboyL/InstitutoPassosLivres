@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { apoiadoresData } from '../data/apoiadores';
-import { ArrowLeft, Instagram, Globe, MessageCircle } from 'lucide-react';
+import { ArrowLeft, Camera, Globe, MessageCircle } from 'lucide-react';
 
 export default function ApoiadorDetalhe() {
   const { id } = useParams();
@@ -85,7 +85,7 @@ export default function ApoiadorDetalhe() {
                 )}
                 {apoio.redesSociais.instagram && (
                   <a href={apoio.redesSociais.instagram} target="_blank" rel="noopener noreferrer" className="btn" style={{ backgroundColor: '#E1306C', color: 'white', display: 'flex', gap: '10px' }}>
-                    <Instagram size={20} /> Instagram
+                    <Camera size={20} /> Instagram
                   </a>
                 )}
                 {apoio.redesSociais.site && (
