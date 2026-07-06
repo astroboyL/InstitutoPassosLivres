@@ -32,8 +32,8 @@ export default function ApoiadorDetalhe() {
           <Link to="/apoiadores" style={{ color: 'var(--c-white)', display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '30px', textDecoration: 'none', opacity: 0.8, transition: 'opacity 0.3s' }} onMouseOver={e => e.currentTarget.style.opacity = '1'} onMouseOut={e => e.currentTarget.style.opacity = '0.8'}>
             <ArrowLeft size={20} /> Voltar para Apoiadores
           </Link>
-          <h1 style={{ color: 'var(--c-white)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontFamily: 'var(--font-serif)', lineHeight: 1.1, marginBottom: '16px' }}>{apoio.nome}</h1>
-          <p style={{ color: 'var(--c-gold)', fontSize: '1.2rem', fontWeight: 500 }}>{apoio.descCurta}</p>
+          <h1 style={{ color: 'var(--c-white)', fontSize: 'clamp(2rem, 8vw, 4rem)', fontFamily: 'var(--font-serif)', lineHeight: 1.1, marginBottom: '16px' }}>{apoio.nome}</h1>
+          <p style={{ color: 'var(--c-gold)', fontSize: 'clamp(1rem, 4vw, 1.2rem)', fontWeight: 500 }}>{apoio.descCurta}</p>
         </div>
       </div>
 
