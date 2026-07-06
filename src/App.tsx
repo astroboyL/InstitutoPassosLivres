@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Apoiadores from './pages/Apoiadores';
 import ApoiadorDetalhe from './pages/ApoiadorDetalhe';
 import Doar from './pages/Doar';
+import Estatuto from './pages/Estatuto';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/apoiadores" element={<Apoiadores />} />
         <Route path="/apoiadores/:id" element={<ApoiadorDetalhe />} />
         <Route path="/doar" element={<Doar />} />
+        <Route path="/estatuto" element={<Estatuto />} />
       </Routes>
       <Footer />
     </>

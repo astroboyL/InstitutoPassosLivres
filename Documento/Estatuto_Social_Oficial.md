@@ -1,0 +1,165 @@
+# ESTATUTO SOCIAL DO INSTITUTO PASSOS LIVRES
+
+**CAPÍTULO I – DA DENOMINAÇÃO, SEDE E FINALIDADES**
+
+**Artigo 1º** – O INSTITUTO PASSOS LIVRES, constituído em [Data da futura reunião], é uma associação civil de direito privado, sem fins lucrativos, de caráter educacional, esportivo, cultural e de assistência social, com duração por tempo indeterminado.
+
+**Artigo 2º** – A Associação tem sede e foro no município de [Santa Luzia ou Belo Horizonte], Estado de Minas Gerais, localizada na [Endereço completo da sede].
+
+**Artigo 3º** – O INSTITUTO PASSOS LIVRES tem por finalidade primordial promover o desenvolvimento integral, a proteção e a garantia de direitos de crianças e adolescentes, além de prestar assistência às suas famílias, atuando de forma multidisciplinar.
+
+**Parágrafo Único:** Para atingir suas finalidades, a Associação se dedicará às seguintes atividades:
+1. **Integração com a Natureza:** Promover atividades ao ar livre, trilhas ecológicas, acampamentos e educação ambiental, visando o desenvolvimento físico, emocional e a conscientização ecológica.
+2. **Incentivo ao Esporte e Lazer:** Promover a integração social por meio da prática e incentivo aos esportes, além de oferecer suporte contínuo de lazer e recreação para as crianças e adolescentes.
+3. **Apoio e Incentivo Educacional:** Fomentar a integração e o incentivo à educação formal básica, bem como promover a qualificação profissionalizante, criando oportunidades reais de crescimento e inserção no mercado de trabalho.
+4. **Apoio Psicológico:** Disponibilizar atendimento, acolhimento e suporte psicológico para crianças, adolescentes e seus familiares em situação de vulnerabilidade.
+5. **Assistência e Orientação Jurídica:** Oferecer suporte e orientação legal para as famílias assistidas, assegurando a defesa de seus direitos fundamentais.
+6. **Assistência Social e Arrecadação:** Promover campanhas contínuas para arrecadação e distribuição de alimentos, roupas e outras doações essenciais, visando o amparo material e a melhoria da qualidade de vida das famílias necessitadas.
+7. **Criação de Ambientes Seguros:** Desenvolver e manter espaços e projetos que garantam a integridade, a proteção e a oportunidade de crescimento saudável para o público infanto-juvenil.
+
+---
+
+**CAPÍTULO II – DOS ASSOCIADOS**
+
+**Artigo 4º** – O quadro social do INSTITUTO PASSOS LIVRES será composto por número ilimitado de associados, distribuídos nas seguintes categorias:
+1. **Associados Fundadores:** São aqueles que idealizaram a Associação, participaram da Assembleia Geral de Constituição e assinaram a primeira Ata. Possuem direito a voz, voto e podem ser votados para qualquer cargo.
+2. **Associados Efetivos (ou Contribuintes):** São pessoas físicas ou jurídicas que contribuem financeiramente de forma regular com o Instituto, admitidos após a fundação. Possuem direito a voz e voto nas Assembleias.
+3. **Associados Voluntários:** São aqueles que prestam serviços não remunerados ao Instituto, auxiliando nas atividades (trilhas, aulas, apoio). Possuem direito a voz nas Assembleias, mas não possuem direito a voto, nem podem ser votados para cargos de Diretoria.
+4. **Associados Beneméritos:** Pessoas ou empresas que realizaram doações ou serviços de grande relevância ao Instituto, recebendo este título por aprovação da Diretoria. Não possuem direito a voto.
+
+**Artigo 5º** – A admissão de novos associados (Efetivos ou Voluntários) se dará por meio de preenchimento de ficha de inscrição e estará condicionada à aprovação prévia da Diretoria Executiva.
+
+**§ 1º (Análise de Antecedentes)** – Como requisito obrigatório e inegociável para a admissão ou ingresso no Instituto, todos os candidatos a associados, voluntários, funcionários ou parceiros deverão passar por uma rigorosa análise interna de antecedentes criminais, mediante a apresentação das devidas certidões negativas (federal e estadual).
+
+**§ 2º (Critérios de Rejeição e Vedação)** – Será expressamente, sumariamente e definitivamente negada a admissão e qualquer forma de participação na Associação de qualquer pessoa que possua registros de condenação, processos ou investigações ativas relacionados a:
+I – Crimes contra a mulher, incluindo violência doméstica, assédio e feminicídio;
+II – Crimes contra crianças e adolescentes, em estrita observância ao Estatuto da Criança e do Adolescente (ECA), incluindo abusos, exploração e negligência;
+III – Crimes graves e de teor violento, tais como homicídios, latrocínios, agressões físicas e crimes sexuais de qualquer natureza.
+
+**Artigo 6º** – São direitos dos Associados Fundadores e Efetivos (quites com suas obrigações):
+I – Votar e ser votado para os cargos eletivos;
+II – Tomar parte nas Assembleias Gerais;
+III – Propor a criação e admissão de novos associados;
+IV – Apresentar sugestões e projetos à Diretoria.
+
+**Artigo 7º** – São deveres de todos os associados:
+I – Cumprir e fazer cumprir o presente Estatuto;
+II – Zelar pelo bom nome e pelo patrimônio do INSTITUTO PASSOS LIVRES;
+III – Comparecer às Assembleias Gerais quando convocados;
+IV – Defender os princípios, os objetivos e a missão da Associação.
+
+**Artigo 8º** – A demissão (saída voluntária) do associado dar-se-á por pedido por escrito dirigido à Diretoria Executiva.
+
+**Artigo 9º** – A exclusão de qualquer associado só é admissível havendo justa causa, obedecido o devido processo legal e garantido o direito de ampla defesa.
+
+**§ 1º** – Considera-se justa causa para a exclusão imediata do associado a prática de qualquer um dos seguintes atos:
+I – Prática de violência física, verbal ou psicológica, bem como o cometimento de crimes graves e de teor violento (como homicídios, agressões, assédios, crimes contra a mulher e violência doméstica), independentemente de terem ocorrido dentro ou fora da instituição;
+II – Agressão, ameaça ou ofensa direcionada a outros associados, voluntários, funcionários ou a qualquer pessoa dentro das dependências do Instituto ou durante a realização de suas atividades;
+III – Qualquer tipo de ofensa, agressão, negligência, discriminação, exploração ou ato de crueldade contra as crianças e adolescentes assistidos, em estrita observância ao Estatuto da Criança e do Adolescente (ECA);
+IV – Consumo, porte, distribuição ou promoção (propaganda) de bebidas alcoólicas, cigarros, drogas ilícitas ou qualquer outra substância inadequada para menores, seja nas dependências do Instituto, em suas redes sociais ou durante eventos, acampamentos e trilhas;
+V – Porte, posse, uso, guarda ou exibição de qualquer tipo de arma (de fogo, branca ou similares) nas dependências da instituição ou durante suas atividades externas, sendo esta proibição absoluta, excetuando-se exclusivamente as autoridades de segurança pública no estrito exercício de suas funções legais;
+VI – Furto, roubo, desvio de recursos financeiros, fraudes, apropriação indébita ou o cometimento de qualquer crime contra o patrimônio do Instituto ou de seus assistidos;
+VII – Divulgação não autorizada de informações internas e estratégicas da instituição, bem como o vazamento, exposição ou uso indevido de dados pessoais e imagens das crianças, adolescentes e familiares, incluindo o cometimento de crimes cibernéticos, em observância à Lei Geral de Proteção de Dados (LGPD);
+VIII – Utilização do nome, dos recursos, do público ou da estrutura do INSTITUTO PASSOS LIVRES para fins de promoção pessoal (autodivulgação), enriquecimento ilícito ou para campanhas político-partidárias;
+IX – Violação grave das normas deste Estatuto, difamação pública do Instituto ou comprovado desvio de conduta ética.
+
+**§ 2º (Obrigação de Denúncia)** – É dever inegociável da Diretoria Executiva garantir que qualquer crime ou infração penal cometida por associados, voluntários, funcionários ou qualquer pessoa com vínculo com a instituição, de que se tome conhecimento, seja imediata e formalmente denunciada às autoridades policiais, judiciárias e aos órgãos de proteção competentes, não havendo qualquer tolerância ou acobertamento de atos ilícitos.
+
+**§ 3º** – A exclusão será decidida pela Diretoria Executiva, cabendo recurso à Assembleia Geral.
+
+**§ 4º (Cláusula de Proteção aos Fundadores)** – Para a exclusão de um Associado Fundador, será exigida a convocação de uma Assembleia Geral Extraordinária específica para este fim, sendo necessária a aprovação de, no mínimo, 80% (oitenta por cento) da totalidade dos associados com direito a voto, garantindo-se o direito de defesa prévia.
+
+---
+
+**CAPÍTULO III – DOS ÓRGÃOS DIRIGENTES E DA ADMINISTRAÇÃO**
+
+**Artigo 10º** – São órgãos da administração e fiscalização do INSTITUTO PASSOS LIVRES:
+I – A Assembleia Geral;
+II – A Diretoria Executiva;
+III – O Conselho Fiscal.
+
+**Artigo 11º** – A Assembleia Geral é o órgão máximo e soberano da Associação, constituída por todos os associados em pleno gozo de seus direitos estatutários, competindo-lhe, privativamente:
+I – Eleger e destituir os administradores (Diretoria Executiva e Conselho Fiscal);
+II – Aprovar as contas e o balanço anual;
+III – Alterar o presente Estatuto;
+IV – Decidir sobre a dissolução da Associação.
+
+**Artigo 12º** – A Diretoria Executiva é o órgão de administração e representação da Associação, eleita pela Assembleia Geral para um mandato de 4 (quatro) anos, permitida a reeleição, sendo composta por:
+I – Diretor-Presidente;
+II – Diretor-Secretário;
+III – Diretor-Tesoureiro.
+
+**§ 1º** – Os cargos da Diretoria Executiva e do Conselho Fiscal não serão remunerados em nenhuma hipótese pelo exercício de suas funções estatutárias.
+
+**§ 2º (Contratação de Terceiros e Funcionários)** – Havendo necessidade para a execução, administração ou operação dos projetos, o Instituto poderá contratar funcionários (sob regime da CLT) ou prestadores de serviços terceirizados (Pessoa Jurídica), pagando remuneração compatível com os valores de mercado, desde que haja disponibilidade financeira.
+
+**Artigo 13º** – Compete ao Diretor-Presidente:
+I – Representar o INSTITUTO PASSOS LIVRES ativa e passivamente, judicial e extrajudicialmente;
+II – Cumprir e fazer cumprir este Estatuto e os regulamentos internos;
+III – Convocar e presidir as reuniões da Diretoria Executiva e as Assembleias Gerais;
+IV – Assinar, em conjunto com o Diretor-Tesoureiro, os cheques, ordens de pagamento, contratos, convênios e quaisquer outros documentos financeiros;
+V – Coordenar as atividades gerais da instituição e o relacionamento com parceiros e a sociedade.
+
+**Artigo 14º** – Compete ao Diretor-Secretário:
+I – Redigir e manter em dia as atas das reuniões da Diretoria e das Assembleias Gerais;
+II – Cuidar do arquivo, correspondências e dos registros dos associados;
+III – Substituir o Presidente em suas faltas e impedimentos temporários.
+
+**Artigo 15º** – Compete ao Diretor-Tesoureiro:
+I – Arrecadar e contabilizar as contribuições, doações e rendas, mantendo em dia a escrituração da Associação;
+II – Pagar as contas das despesas autorizadas pelo Presidente;
+III – Apresentar relatórios de receitas e despesas e o balanço anual para aprovação;
+IV – Assinar, em conjunto com o Diretor-Presidente, os documentos financeiros e bancários.
+
+**Artigo 16º** – O Conselho Fiscal será composto por 3 (três) membros titulares, eleitos pela Assembleia Geral para um mandato coincidente com o da Diretoria Executiva (4 anos).
+
+**Parágrafo Único:** Compete ao Conselho Fiscal examinar os livros de escrituração e fiscalizar rigorosamente a transparência e o uso correto dos recursos da entidade.
+
+---
+
+**CAPÍTULO IV – DO PATRIMÔNIO E DAS FONTES DE RECURSOS**
+
+**Artigo 17º** – O patrimônio do INSTITUTO PASSOS LIVRES será constituído por bens móveis, imóveis, veículos, valores e outros direitos que venha a possuir ou adquirir, registrados em nome da Associação.
+
+**Artigo 18º** – As fontes de recursos para a manutenção da Associação serão compostas por:
+I – Contribuições e mensalidades dos associados;
+II – Doações de pessoas físicas ou jurídicas, nacionais ou estrangeiras;
+III – Arrecadações através de eventos beneficentes e campanhas de financiamento;
+IV – Subvenções, termos de fomento, convênios e parcerias firmadas com o Poder Público ou com a iniciativa privada;
+V – Rendas eventuais, juros e rendimentos de aplicações financeiras do próprio patrimônio.
+
+**Artigo 19º** – O INSTITUTO PASSOS LIVRES não distribui entre os seus associados, conselheiros, diretores, empregados, doadores ou voluntários, eventuais excedentes operacionais, dividendos ou participações.
+
+**Parágrafo Único:** Todo recurso arrecadado será aplicado integralmente na manutenção e no desenvolvimento dos objetivos institucionais da entidade.
+
+---
+
+**CAPÍTULO V – DA ALTERAÇÃO ESTATUTÁRIA E DA DISSOLUÇÃO**
+
+**Artigo 20º** – Este Estatuto poderá ser reformado, no todo ou em parte, a qualquer tempo, por deliberação da Assembleia Geral Extraordinária.
+
+**Parágrafo Único:** Conforme previsto na Cláusula de Proteção aos Fundadores (§4º do Artigo 9º), qualquer alteração que vise modificar os direitos dos Associados Fundadores exigirá a aprovação mínima de 80% (oitenta por cento) dos associados com direito a voto.
+
+**Artigo 21º** – O INSTITUTO PASSOS LIVRES poderá ser dissolvido por decisão da Assembleia Geral Extraordinária, quando se tornar impossível a continuação de suas atividades.
+
+**Artigo 22º** – Em caso de dissolução da Associação, após quitadas todas as dívidas, o patrimônio remanescente será obrigatoriamente destinado a outra instituição sem fins lucrativos congênere, preferencialmente com sede no mesmo município, ou a uma entidade pública.
+
+**Parágrafo Único:** Em nenhuma hipótese o patrimônio será dividido entre os associados ou membros da Diretoria.
+
+---
+
+**CAPÍTULO VI – DAS DISPOSIÇÕES GERAIS E TRANSITÓRIAS**
+
+**Artigo 23º** – Os casos omissos neste Estatuto serão resolvidos pela Diretoria Executiva e referendados pela Assembleia Geral.
+
+**Artigo 24º** – O presente Estatuto entra em vigor na data de sua aprovação pela Assembleia Geral de Constituição, revogando-se as disposições em contrário.
+
+[Santa Luzia ou Belo Horizonte] - MG, [Dia] de [Mês] de [Ano].
+
+___________________________________________________
+[SEU NOME COMPLETO]
+Diretor-Presidente / Associado Fundador
+
+___________________________________________________
+[NOME DO ADVOGADO]
+Advogado(a) - OAB/MG nº [Número]

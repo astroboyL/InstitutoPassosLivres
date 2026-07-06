@@ -71,6 +71,7 @@ export default function Footer() {
             <Link to="/#sobre" style={{ color: 'rgba(255,255,255,0.9)' }}>Sobre Nós</Link>
             <Link to="/#programas" style={{ color: 'rgba(255,255,255,0.9)' }}>Programas</Link>
             <Link to="/apoiadores" style={{ color: 'rgba(255,255,255,0.9)' }}>Apoiadores</Link>
+            <Link to="/estatuto" style={{ color: 'rgba(255,255,255,0.9)' }}>Estatuto Social</Link>
           </div>
           <div className="footer-social" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <h4 style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '10px' }}>Acompanhe</h4>

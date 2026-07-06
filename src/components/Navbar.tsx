@@ -35,6 +35,7 @@ export default function Navbar() {
           <li><Link to="/#sobre" className="nav-link">Sobre</Link></li>
           <li><Link to="/#programas" className="nav-link">Programas</Link></li>
           <li><Link to="/apoiadores" className={`nav-link ${location.pathname === '/apoiadores' ? 'active' : ''}`}>Apoiadores</Link></li>
+          <li><Link to="/estatuto" className={`nav-link ${location.pathname === '/estatuto' ? 'active' : ''}`}>Estatuto</Link></li>
           <li><Link to="/#contato" className="nav-link">Contato</Link></li>
           <li><Link to="/doar" className="nav-cta">Apoiar Projeto</Link></li>
         </ul>
