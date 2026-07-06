@@ -506,7 +506,6 @@ h2.section-title {
 .hero-image-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 75%;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-hover);
@@ -514,13 +513,9 @@ h2.section-title {
 }
 
 .main-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top; /* Evita cortar a cabeça das pessoas na foto */
+  height: auto;
+  display: block;
 }
 
 @keyframes cinematicZoom {
