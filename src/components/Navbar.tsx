@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,8 +25,7 @@ export default function Navbar() {
         <Link to="/" className="nav-logo" aria-label="Voltar ao Início">
           <img src="/image/logoSoope.png" alt="Símbolo do Instituto" className="logo-img" />
           <div className="nav-logo-text">
-            <span className="logo-title">INSTITUTO <strong>PASSOS LIVRES</strong></span>
-            <span className="logo-subtitle">Caminhando Juntos para um Futuro Melhor.</span>
+            <span className={`logo-title ${menuOpen ? 'logo-title-dark' : ''}`}>INSTITUTO <strong style={{ fontWeight: 800 }}>PASSOS LIVRES</strong></span>
           </div>
         </Link>
         <ul className={`nav-links ${menuOpen ? 'active' : ''}`} id="nav-links">
@@ -37,15 +35,17 @@ export default function Navbar() {
           <li><Link to="/apoiadores" className={`nav-link ${location.pathname === '/apoiadores' ? 'active' : ''}`}>Apoiadores</Link></li>
           <li><Link to="/estatuto" className={`nav-link ${location.pathname === '/estatuto' ? 'active' : ''}`}>Estatuto</Link></li>
           <li><Link to="/#contato" className="nav-link">Contato</Link></li>
-          <li><Link to="/doar" className="nav-cta">Apoiar Projeto</Link></li>
+          <li><Link to="/doar" className="btn btn-primary nav-cta">Apoiar Projeto</Link></li>
         </ul>
         <button 
-          className="nav-hamburger" 
+          className={`nav-hamburger ${menuOpen ? 'open' : ''}`} 
           id="hamburger" 
           aria-label="Menu"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <X size={24} color="#1a5c2a" /> : <Menu size={24} color="#1a5c2a" />}
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
         </button>
       </div>
     </nav>
