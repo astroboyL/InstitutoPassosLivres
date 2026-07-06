@@ -4,7 +4,6 @@ import { Leaf, Shield, HeartHandshake, Tent, Dumbbell, BookOpen, Brain, Scale, G
 
 export default function Home() {
 
-  // Simple intersection observer for reveal animations
   useEffect(() => {
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
@@ -41,7 +40,7 @@ export default function Home() {
               <Link to="/doar" className="btn btn-primary">Fazer Parte</Link>
               <a href="#sobre" className="btn btn-text">Conhecer História &rarr;</a>
             </div>
-            
+
             <div className="hero-metrics">
               <div className="metric">
                 <span className="metric-number">150<span style={{fontSize: '0.6em'}}>+</span></span>
@@ -54,18 +53,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="hero-visual">
             <div className="hero-image-wrapper">
-              <img src="/image/crianças/Gemini_Generated_Image_4akx1a4akx1a4akx.png" alt="Trilha na natureza" className="hero-img main-img" />
-              <div className="floating-card glass-panel">
-                <div className="card-icon">
-                  <Leaf size={24} />
-                </div>
-                <div>
-                  <strong>Contato com a Natureza</strong>
-                  <span>Trilhas e Educação Ambiental</span>
-                </div>
+              <img src="/image/crianças/Gemini_Generated_Image_4akx1a4akx1a4akx.png" alt="Trilha na natureza" className="main-img" />
+            </div>
+            <div className="floating-card">
+              <div className="card-icon">
+                <Leaf size={20} color="#155E2B" />
+              </div>
+              <div>
+                <strong>Contato com a Natureza</strong>
+                <span>Trilhas e Educação Ambiental</span>
               </div>
             </div>
           </div>
@@ -76,7 +75,7 @@ export default function Home() {
       <div className="values-strip">
         <div className="container strip-container">
           <span>Integração com a Natureza</span>
-          <span>Esporte & Lazer</span>
+          <span>Esporte &amp; Lazer</span>
           <span>Incentivo Educacional</span>
           <span>Apoio Psicológico</span>
           <span>Assistência Social</span>
@@ -84,7 +83,7 @@ export default function Home() {
       </div>
 
       {/* ===== SOBRE ===== */}
-      <section className="sobre section-padding" id="sobre">
+      <section className="section-padding" id="sobre">
         <div className="container">
           <div className="sobre-grid">
             <div className="sobre-images reveal">
@@ -95,7 +94,7 @@ export default function Home() {
                 <img src="/image/crianças/naescola.JPG" alt="Escola" className="img-small" />
               </div>
             </div>
-            
+
             <div className="sobre-text reveal reveal-delay-2">
               <h2 className="section-title">Nossa essência e missão</h2>
               <p className="lead-text">
@@ -104,11 +103,11 @@ export default function Home() {
               <p className="body-text">
                 Sabemos que as dificuldades são enormes, mas acreditamos que, com amor, educação e contato com a natureza, podemos curar feridas e resgatar a alegria de sonhar. Cada abraço, cada aula e cada trilha são passos firmes na jornada de proteção e desenvolvimento daqueles que mais precisam de nós.
               </p>
-              
+
               <ul className="feature-list">
                 <li>
                   <div className="feature-icon">
-                    <Shield size={20} color="#1a5c2a" />
+                    <Shield size={20} color="#155E2B" />
                   </div>
                   <div className="feature-content">
                     <strong>Ambiente Seguro</strong>
@@ -117,7 +116,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="feature-icon">
-                    <HeartHandshake size={20} color="#1a5c2a" />
+                    <HeartHandshake size={20} color="#155E2B" />
                   </div>
                   <div className="feature-content">
                     <strong>Apoio às Famílias</strong>
@@ -131,41 +130,41 @@ export default function Home() {
       </section>
 
       {/* ===== PROGRAMAS ===== */}
-      <section className="programas section-padding" id="programas">
+      <section className="section-padding" id="programas" style={{ background: 'var(--c-bg-off)' }}>
         <div className="container">
-          <div className="section-header center reveal">
+          <div className="text-center reveal">
             <h2 className="section-title">O que fazemos</h2>
             <p className="section-subtitle">Pilares fundamentais para o desenvolvimento integral.</p>
           </div>
-          
+
           <div className="programas-grid">
             <div className="prog-card reveal reveal-delay-1">
-              <div className="prog-icon"><Tent size={32} color="#1a5c2a" /></div>
+              <div className="prog-icon"><Tent size={28} color="#155E2B" /></div>
               <h3>Natureza</h3>
               <p>Trilhas e acampamentos focados na educação ambiental e conscientização ecológica.</p>
             </div>
             <div className="prog-card reveal reveal-delay-2">
-              <div className="prog-icon"><Dumbbell size={32} color="#1a5c2a" /></div>
+              <div className="prog-icon"><Dumbbell size={28} color="#155E2B" /></div>
               <h3>Esporte</h3>
               <p>Integração e disciplina por meio da prática contínua de atividades esportivas.</p>
             </div>
             <div className="prog-card reveal reveal-delay-3">
-              <div className="prog-icon"><BookOpen size={32} color="#1a5c2a" /></div>
+              <div className="prog-icon"><BookOpen size={28} color="#155E2B" /></div>
               <h3>Educação</h3>
               <p>Reforço escolar e qualificação profissionalizante para um futuro no mercado de trabalho.</p>
             </div>
             <div className="prog-card reveal reveal-delay-1">
-              <div className="prog-icon"><Brain size={32} color="#1a5c2a" /></div>
+              <div className="prog-icon"><Brain size={28} color="#155E2B" /></div>
               <h3>Psicologia</h3>
               <p>Acolhimento humanizado para suporte emocional e saúde mental dos assistidos.</p>
             </div>
             <div className="prog-card reveal reveal-delay-2">
-              <div className="prog-icon"><Scale size={32} color="#1a5c2a" /></div>
+              <div className="prog-icon"><Scale size={28} color="#155E2B" /></div>
               <h3>Jurídico</h3>
               <p>Orientação e assistência legal para defender os direitos fundamentais das famílias.</p>
             </div>
             <div className="prog-card reveal reveal-delay-3">
-              <div className="prog-icon"><Gift size={32} color="#1a5c2a" /></div>
+              <div className="prog-icon"><Gift size={28} color="#155E2B" /></div>
               <h3>Social</h3>
               <p>Distribuição de doações vitais, visando o amparo material em momentos críticos.</p>
             </div>
@@ -177,35 +176,35 @@ export default function Home() {
       <section className="impacto section-padding" id="impacto">
         <div className="container impacto-container">
           <div className="impacto-content reveal">
-            <h2 className="section-title text-light">Resultados de uma caminhada conjunta</h2>
+            <h2 className="section-title">Resultados de uma caminhada conjunta</h2>
             <p className="lead-text text-light-muted">
               Cada número reflete histórias reais de superação e esperança construídas por nossa equipe e voluntários.
             </p>
             <div className="stats-grid">
               <div className="stat-item">
-                <span className="stat-number text-gold">150+</span>
-                <span className="stat-label">Crianças & Adolescentes</span>
+                <span className="stat-number">150+</span>
+                <span className="stat-label">Crianças &amp; Adolescentes</span>
               </div>
               <div className="stat-item">
-                <span className="stat-number text-gold">80+</span>
+                <span className="stat-number">80+</span>
                 <span className="stat-label">Famílias Amparadas</span>
               </div>
               <div className="stat-item">
-                <span className="stat-number text-gold">6+</span>
+                <span className="stat-number">6+</span>
                 <span className="stat-label">Programas Ativos</span>
               </div>
             </div>
           </div>
-          <div className="impacto-image reveal reveal-delay-2 cinematic-slider">
-            <img src="/image/crianças/istockphoto-2096480418-612x612.jpg" alt="Impacto e união" className="slide-img active" />
+          <div className="impacto-image reveal reveal-delay-2">
+            <img src="/image/crianças/istockphoto-2096480418-612x612.jpg" alt="Impacto e união" />
           </div>
         </div>
       </section>
 
       {/* ===== GALERIA ===== */}
-      <section className="galeria section-padding" id="galeria">
+      <section className="section-padding" id="galeria">
         <div className="container">
-          <div className="section-header reveal">
+          <div className="text-center reveal">
             <h2 className="section-title">Momentos</h2>
           </div>
           <div className="masonry-grid">
@@ -226,9 +225,9 @@ export default function Home() {
       </section>
 
       {/* ===== DOE / CONTATO ===== */}
-      <section className="cta-section section-padding" id="doe">
+      <section className="section-padding" id="doe">
         <div className="container">
-          <div className="cta-wrapper glass-panel reveal">
+          <div className="cta-wrapper reveal">
             <div className="cta-info">
               <h2 className="section-title">Seja um transformador</h2>
               <p className="body-text">
@@ -236,16 +235,16 @@ export default function Home() {
               </p>
               <div className="contact-methods">
                 <div className="method">
-                  <span className="method-icon"><MapPin size={24} /></span>
+                  <span className="method-icon"><MapPin size={20} /></span>
                   <span>Santa Luzia / Belo Horizonte - MG</span>
                 </div>
                 <div className="method">
-                  <span className="method-icon"><Mail size={24} /></span>
+                  <span className="method-icon"><Mail size={20} /></span>
                   <span>contato@institutopasoslivres.org.br</span>
                 </div>
               </div>
             </div>
-            
+
             <div className="cta-form-container" id="contato">
               <form className="clean-form" id="doe-form" onSubmit={(e) => { e.preventDefault(); alert('Formulário pronto para integração Supabase!'); }}>
                 <h3 className="form-title">Fale Conosco</h3>
