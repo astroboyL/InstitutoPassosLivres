@@ -1,0 +1,785 @@
+
+/* ================================================================
+   PLATAFORMA EDUCACIONAL — Estilos Completos
+   ================================================================ */
+
+/* ── Layout Principal ─────────────────────────────────────────── */
+.plat-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--c-bg-off);
+}
+
+.plat-main {
+  flex: 1;
+  padding: 24px;
+  padding-top: 80px; /* Space for mobile header */
+  padding-bottom: 100px; /* Space for bottom nav */
+  overflow-y: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ── Sidebar (Desktop) ────────────────────────────────────────── */
+.plat-sidebar {
+  display: none;
+  width: 260px;
+  background: var(--c-bg);
+  border-right: 1px solid rgba(0,0,0,0.06);
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.plat-sidebar-header {
+  padding: 24px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.plat-sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--c-forest);
+}
+
+.plat-sidebar-nav {
+  flex: 1;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plat-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--rad-sm);
+  color: var(--c-text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: var(--trans);
+}
+
+.plat-sidebar-link:hover {
+  background: var(--c-bg-off);
+  color: var(--c-text);
+}
+
+.plat-sidebar-link.active {
+  background: rgba(21,94,43,0.08);
+  color: var(--c-primary);
+  font-weight: 600;
+}
+
+.plat-sidebar-footer {
+  padding: 16px 12px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+/* ── Mobile Header ────────────────────────────────────────────── */
+.plat-mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  background: var(--c-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  z-index: 60;
+}
+
+.plat-mobile-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--c-forest);
+}
+
+.plat-mobile-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--c-forest);
+  padding: 4px;
+}
+
+/* ── Mobile Bottom Navigation ─────────────────────────────────── */
+.plat-bottom-nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--c-bg);
+  border-top: 1px solid rgba(0,0,0,0.06);
+  z-index: 60;
+  padding: 8px 0;
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
+.plat-bottom-link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 0;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--c-text-muted);
+  transition: var(--trans);
+}
+
+.plat-bottom-link.active {
+  color: var(--c-primary);
+}
+
+/* ── Mobile Sidebar Overlay ───────────────────────────────────── */
+.plat-overlay {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 49;
+}
+
+/* Mobile sidebar when open */
+@media (max-width: 1023px) {
+  .plat-sidebar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100vh;
+    z-index: 55;
+    transition: left 0.3s ease;
+    box-shadow: none;
+  }
+  .plat-sidebar.open {
+    left: 0;
+    box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+  }
+}
+
+/* ── Desktop Sidebar ──────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  .plat-sidebar {
+    display: flex;
+  }
+  .plat-mobile-header {
+    display: none;
+  }
+  .plat-bottom-nav {
+    display: none;
+  }
+  .plat-overlay {
+    display: none;
+  }
+  .plat-main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* ── Page Headers ─────────────────────────────────────────────── */
+.plat-page-header {
+  margin-bottom: 32px;
+}
+
+.plat-page-header h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 4px;
+}
+
+.plat-page-header p {
+  color: var(--c-text-muted);
+  font-size: 0.95rem;
+}
+
+/* ── Stats Grid ───────────────────────────────────────────────── */
+.plat-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.plat-stat-card {
+  background: var(--c-bg);
+  padding: 24px;
+  border-radius: var(--rad);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.plat-stat-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--c-primary);
+  display: block;
+}
+
+.plat-stat-label {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+  font-weight: 500;
+}
+
+/* ── Courses Grid ─────────────────────────────────────────────── */
+.plat-courses-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.plat-course-card {
+  background: var(--c-bg);
+  border-radius: var(--rad);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: var(--trans);
+}
+
+.plat-course-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.plat-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.plat-progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+/* ── Filter Tabs ──────────────────────────────────────────────── */
+.plat-filter-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
+}
+
+.plat-filter-tab {
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--c-bg);
+  color: var(--c-text-muted);
+  border: 1px solid rgba(0,0,0,0.06);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--trans);
+}
+
+.plat-filter-tab.active {
+  background: var(--c-primary);
+  color: #fff;
+  border-color: var(--c-primary);
+}
+
+/* ── Aula View ────────────────────────────────────────────────── */
+.plat-aula-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.plat-aula-content {
+  flex: 1;
+}
+
+.plat-aula-sidebar {
+  background: var(--c-bg);
+  border-radius: var(--rad);
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 20px;
+}
+
+.plat-video-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--c-forest);
+  border-radius: var(--rad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.plat-video-placeholder:hover {
+  color: #fff;
+}
+
+.plat-lesson-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plat-lesson-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--rad-sm);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--trans);
+}
+
+.plat-lesson-item:hover, .plat-lesson-item.active {
+  background: var(--c-bg-off);
+}
+
+.plat-lesson-item.completed {
+  color: var(--c-primary);
+}
+
+/* ── Library Grid ─────────────────────────────────────────────── */
+.plat-library-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.plat-material-card {
+  background: var(--c-bg);
+  padding: 24px;
+  border-radius: var(--rad);
+  border: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: var(--trans);
+}
+
+.plat-material-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Search Bar ───────────────────────────────────────────────── */
+.plat-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--c-bg);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: var(--rad);
+  padding: 12px 16px;
+  margin-bottom: 24px;
+}
+
+.plat-search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  background: transparent;
+}
+
+/* ── Table ────────────────────────────────────────────────────── */
+.plat-table-wrapper {
+  overflow-x: auto;
+  background: var(--c-bg);
+  border-radius: var(--rad);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.plat-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.plat-table th {
+  text-align: left;
+  padding: 16px;
+  font-weight: 600;
+  color: var(--c-text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  white-space: nowrap;
+}
+
+.plat-table td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+  white-space: nowrap;
+}
+
+.plat-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.plat-badge.approved { background: rgba(16,185,129,0.1); color: #059669; }
+.plat-badge.pending { background: rgba(245,158,11,0.1); color: #D97706; }
+.plat-badge.review { background: rgba(59,130,246,0.1); color: #2563EB; }
+
+/* ── Teachers Grid ────────────────────────────────────────────── */
+.plat-teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.plat-teacher-card {
+  background: var(--c-bg);
+  padding: 24px;
+  border-radius: var(--rad);
+  border: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.plat-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--c-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0 auto 12px;
+}
+
+.plat-status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.plat-status-dot.online { background: #10B981; }
+.plat-status-dot.offline { background: #CBD5E1; }
+
+/* ── Chat Layout ──────────────────────────────────────────────── */
+.plat-chat-layout {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  min-height: 500px;
+  background: var(--c-bg);
+  border-radius: var(--rad);
+  border: 1px solid rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.plat-chat-list {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.plat-chat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: var(--trans);
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.plat-chat-item:hover, .plat-chat-item.active {
+  background: var(--c-bg-off);
+}
+
+.plat-chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plat-chat-header {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-weight: 600;
+}
+
+.plat-chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.plat-message {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: var(--rad);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.plat-message.received {
+  align-self: flex-start;
+  background: var(--c-bg-off);
+  color: var(--c-text);
+}
+
+.plat-message.sent {
+  align-self: flex-end;
+  background: var(--c-primary);
+  color: #fff;
+}
+
+.plat-chat-input {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.plat-chat-input input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(0,0,0,0.1);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  outline: none;
+}
+
+.plat-chat-input input:focus {
+  border-color: var(--c-primary);
+}
+
+.plat-chat-input button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--c-primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Auth Pages ───────────────────────────────────────────────── */
+.plat-auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--c-bg-off);
+}
+
+.plat-auth-card {
+  background: var(--c-bg);
+  padding: 40px 32px;
+  border-radius: var(--rad-lg);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 440px;
+}
+
+.plat-cadastro-card {
+  background: var(--c-bg);
+  padding: 40px 24px;
+  border-radius: var(--rad-lg);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 700px;
+}
+
+.plat-form-section {
+  margin-bottom: 32px;
+}
+
+.plat-form-section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--c-forest);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--c-bg-off);
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.plat-checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.plat-checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.plat-checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--c-primary);
+}
+
+/* ── Plataforma Home ──────────────────────────────────────────── */
+.plat-home {
+  min-height: 100vh;
+}
+
+.plat-home-hero {
+  background: linear-gradient(135deg, var(--c-forest) 0%, var(--c-primary) 50%, #10B981 100%);
+  color: #fff;
+  padding: 120px 24px 80px;
+  text-align: center;
+}
+
+.plat-home-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.plat-home-subtitle {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+.plat-home-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: -40px auto 60px;
+  padding: 0 24px;
+}
+
+.plat-feature-card {
+  background: var(--c-bg);
+  padding: 32px 24px;
+  border-radius: var(--rad);
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.plat-feature-card h3 {
+  margin: 16px 0 8px;
+  font-size: 1.15rem;
+}
+
+.plat-feature-card p {
+  color: var(--c-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ── Announcements ────────────────────────────────────────────── */
+.plat-announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plat-announcement-card {
+  background: var(--c-bg);
+  padding: 20px;
+  border-radius: var(--rad);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-left: 4px solid var(--c-primary);
+}
+
+/* ── Desktop Responsive ───────────────────────────────────────── */
+@media (min-width: 768px) {
+  .plat-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .plat-courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plat-library-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plat-home-features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .plat-teachers-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .plat-courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .plat-aula-layout {
+    flex-direction: row;
+  }
+  .plat-aula-sidebar {
+    width: 300px;
+    flex-shrink: 0;
+  }
+  .plat-chat-layout {
+    flex-direction: row;
+    height: calc(100vh - 120px);
+  }
+  .plat-chat-list {
+    width: 320px;
+    max-height: none;
+    border-bottom: none;
+    border-right: 1px solid rgba(0,0,0,0.06);
+    overflow-y: auto;
+  }
+  .plat-library-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

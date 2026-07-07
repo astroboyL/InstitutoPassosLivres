@@ -43,6 +43,7 @@ export default function Navbar() {
           <li><Link to="/#programas" className="nav-link" onClick={() => setMenuOpen(false)}>Programas</Link></li>
           <li><Link to="/apoiadores" className={`nav-link ${location.pathname.startsWith('/apoiadores') ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Apoiadores</Link></li>
           <li><Link to="/estatuto" className={`nav-link ${location.pathname === '/estatuto' ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Estatuto</Link></li>
+          <li><Link to="/plataforma" className={`nav-link ${location.pathname.startsWith('/plataforma') ? 'active' : ''}`} onClick={() => setMenuOpen(false)}>Plataforma</Link></li>
           <li><Link to="/#contato" className="nav-link" onClick={() => setMenuOpen(false)}>Contato</Link></li>
           <li><Link to="/doar" className="btn btn-primary nav-cta" onClick={() => setMenuOpen(false)}>Apoiar Projeto</Link></li>
         </ul>
