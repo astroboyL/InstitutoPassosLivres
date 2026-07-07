@@ -1,89 +1,170 @@
+import { useState, useEffect } from 'react';
 import { Users, CheckCircle, Clock, BookOpen, Eye } from 'lucide-react';
-
-const inscricoes = [
-  { nome: 'Lucas Ferreira Silva', email: 'lucas.ferreira@email.com', curso: 'Informática Básica', status: 'Aprovado', data: '02/07/2026' },
-  { nome: 'Mariana Oliveira Santos', email: 'mariana.oliveira@email.com', curso: 'Reforço de Matemática', status: 'Pendente', data: '01/07/2026' },
-  { nome: 'Pedro Henrique Costa', email: 'pedro.costa@email.com', curso: 'Educação Ambiental', status: 'Em Análise', data: '30/06/2026' },
-  { nome: 'Juliana Almeida Souza', email: 'juliana.almeida@email.com', curso: 'Português', status: 'Aprovado', data: '29/06/2026' },
-  { nome: 'Rafael Barbosa Lima', email: 'rafael.barbosa@email.com', curso: 'Inglês Básico', status: 'Pendente', data: '28/06/2026' },
-  { nome: 'Camila Rodrigues Pereira', email: 'camila.rodrigues@email.com', curso: 'Artes', status: 'Aprovado', data: '27/06/2026' },
-];
-
-function badgeClass(status: string) {
-  if (status === 'Aprovado') return 'plat-badge plat-badge-success';
-  if (status === 'Pendente') return 'plat-badge plat-badge-warning';
-  return 'plat-badge plat-badge-info';
-}
+import { supabase } from '../lib/supabase';
 
 export default function Secretaria() {
+  const [cadastros, setCadastros] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchCadastros();
+  }, []);
+
+  async function fetchCadastros() {
+    try {
+      setLoading(true);
+      const { data, error } = await supabase
+        .from('cadastros')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) throw error;
+      setCadastros(data || []);
+    } catch (err) {
+      console.error('Erro ao buscar cadastros:', err);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleStatusChange(id: string, novoStatus: string) {
+    try {
+      const { error } = await supabase
+        .from('cadastros')
+        .update({ status: novoStatus })
+        .eq('id', id);
+
+      if (error) throw error;
+      
+      // Atualiza o estado local
+      setCadastros(prev => 
+        prev.map(c => c.id === id ? { ...c, status: novoStatus } : c)
+      );
+    } catch (err) {
+      console.error('Erro ao atualizar status:', err);
+      alert('Erro ao atualizar status.');
+    }
+  }
+
+  // Estatísticas calculadas com base nos dados reais
+  const stats = {
+    total: cadastros.length,
+    aprovados: cadastros.filter(c => c.status === 'aprovado').length,
+    pendentes: cadastros.filter(c => c.status === 'pendente').length,
+    cursosAtivos: 6 // Fixo por enquanto
+  };
+
   return (
     <div>
       <div className="plat-page-header">
         <h1>Secretaria</h1>
-        <p>Painel Administrativo</p>
+        <p>Painel Administrativo — Gerenciamento de Inscrições</p>
       </div>
 
       <div className="plat-stats-grid">
         <div className="plat-stat-card">
-          <Users size={28} />
-          <div className="plat-stat-number">47</div>
-          <div className="plat-stat-label">Total de Inscrições</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+            <Users size={20} color="#64748B" />
+            <span className="plat-stat-label">Total de Inscrições</span>
+          </div>
+          <span className="plat-stat-number">{stats.total}</span>
         </div>
         <div className="plat-stat-card">
-          <CheckCircle size={28} />
-          <div className="plat-stat-number">32</div>
-          <div className="plat-stat-label">Aprovados</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+            <CheckCircle size={20} color="#10B981" />
+            <span className="plat-stat-label">Aprovados</span>
+          </div>
+          <span className="plat-stat-number" style={{ color: '#10B981' }}>{stats.aprovados}</span>
         </div>
         <div className="plat-stat-card">
-          <Clock size={28} />
-          <div className="plat-stat-number">15</div>
-          <div className="plat-stat-label">Pendentes</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+            <Clock size={20} color="#F59E0B" />
+            <span className="plat-stat-label">Pendentes</span>
+          </div>
+          <span className="plat-stat-number" style={{ color: '#F59E0B' }}>{stats.pendentes}</span>
         </div>
         <div className="plat-stat-card">
-          <BookOpen size={28} />
-          <div className="plat-stat-number">6</div>
-          <div className="plat-stat-label">Cursos Ativos</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+            <BookOpen size={20} color="#3B82F6" />
+            <span className="plat-stat-label">Cursos Ativos</span>
+          </div>
+          <span className="plat-stat-number" style={{ color: '#3B82F6' }}>{stats.cursosAtivos}</span>
         </div>
       </div>
 
       <div className="plat-table-wrapper">
-        <h2 style={{ marginBottom: '1rem' }}>Inscrições Recentes</h2>
         <table className="plat-table">
           <thead>
             <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>Curso</th>
-              <th>Status</th>
+              <th>Nome / Contato</th>
+              <th>Cursos de Interesse</th>
               <th>Data</th>
+              <th>Status</th>
               <th>Ações</th>
             </tr>
           </thead>
           <tbody>
-            {inscricoes.map((row, i) => (
-              <tr key={i}>
-                <td>{row.nome}</td>
-                <td>{row.email}</td>
-                <td>{row.curso}</td>
-                <td>
-                  <span className={badgeClass(row.status)}>{row.status}</span>
-                </td>
-                <td>{row.data}</td>
-                <td>
-                  <div style={{ display: 'flex', gap: '0.4rem' }}>
-                    <button className="btn btn-sm btn-success" title="Aprovar">
-                      <CheckCircle size={14} /> Aprovar
-                    </button>
-                    <button className="btn btn-sm btn-danger" title="Rejeitar">
-                      <Clock size={14} /> Rejeitar
-                    </button>
-                    <button className="btn btn-sm" title="Visualizar">
-                      <Eye size={14} />
-                    </button>
-                  </div>
+            {loading ? (
+              <tr>
+                <td colSpan={5} style={{ textAlign: 'center', padding: '40px' }}>
+                  Carregando inscrições...
                 </td>
               </tr>
-            ))}
+            ) : cadastros.length === 0 ? (
+              <tr>
+                <td colSpan={5} style={{ textAlign: 'center', padding: '40px' }}>
+                  Nenhuma inscrição encontrada.
+                </td>
+              </tr>
+            ) : (
+              cadastros.map((inscrito) => (
+                <tr key={inscrito.id}>
+                  <td>
+                    <div style={{ fontWeight: 600, color: '#1E293B', marginBottom: '4px' }}>{inscrito.nome_completo}</div>
+                    <div style={{ fontSize: '0.8rem', color: '#64748B' }}>{inscrito.email}</div>
+                    <div style={{ fontSize: '0.8rem', color: '#64748B' }}>{inscrito.telefone}</div>
+                  </td>
+                  <td>
+                    <div style={{ fontSize: '0.85rem' }}>
+                      {inscrito.cursos_interesse?.join(', ') || '-'}
+                    </div>
+                  </td>
+                  <td>
+                    {new Date(inscrito.created_at).toLocaleDateString('pt-BR')}
+                  </td>
+                  <td>
+                    <span className={`plat-badge ${inscrito.status === 'aprovado' ? 'approved' : inscrito.status === 'rejeitado' ? 'review' : 'pending'}`}>
+                      {inscrito.status ? inscrito.status.charAt(0).toUpperCase() + inscrito.status.slice(1) : 'Pendente'}
+                    </span>
+                  </td>
+                  <td>
+                    <div style={{ display: 'flex', gap: '8px' }}>
+                      {inscrito.status !== 'aprovado' && (
+                        <button 
+                          className="btn btn-sm" 
+                          style={{ background: 'rgba(16,185,129,0.1)', color: '#059669', padding: '4px 10px', fontSize: '0.8rem' }}
+                          onClick={() => handleStatusChange(inscrito.id, 'aprovado')}
+                        >
+                          Aprovar
+                        </button>
+                      )}
+                      {inscrito.status !== 'rejeitado' && (
+                        <button 
+                          className="btn btn-sm" 
+                          style={{ background: 'rgba(239,68,68,0.1)', color: '#DC2626', padding: '4px 10px', fontSize: '0.8rem' }}
+                          onClick={() => handleStatusChange(inscrito.id, 'rejeitado')}
+                        >
+                          Rejeitar
+                        </button>
+                      )}
+                      <button className="btn btn-sm" style={{ padding: '4px', background: 'none', border: '1px solid rgba(0,0,0,0.1)' }}>
+                        <Eye size={16} color="#64748B" />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>

@@ -22,6 +22,7 @@ import Biblioteca from './plataforma/Biblioteca';
 import Secretaria from './plataforma/Secretaria';
 import SalaProfessores from './plataforma/SalaProfessores';
 import ChatPanel from './plataforma/ChatPanel';
+import { AuthProvider, ProtectedRoute } from './lib/auth';
 import './plataforma/plataforma.css';
 
 function ScrollToTop() {
@@ -46,7 +47,7 @@ function App() {
   const isPlataforma = location.pathname.startsWith('/plataforma');
 
   return (
-    <>
+    <AuthProvider>
       <ScrollToTop />
       {/* Hide main navbar/footer inside the platform */}
       {!isPlataforma && <Navbar />}
@@ -63,20 +64,22 @@ function App() {
         <Route path="/plataforma/cadastro" element={<CadastroSelecao />} />
         <Route path="/plataforma/login" element={<LoginPage />} />
 
-        {/* Platform App Pages (with sidebar) */}
-        <Route element={<PlataformaLayout />}>
+        {/* Platform App Pages (with sidebar - Protected) */}
+        <Route element={<ProtectedRoute><PlataformaLayout /></ProtectedRoute>}>
           <Route path="/plataforma/dashboard" element={<Dashboard />} />
           <Route path="/plataforma/sala-de-aula" element={<SalaDeAula />} />
           <Route path="/plataforma/sala-de-aula/:cursoId" element={<AulaView />} />
           <Route path="/plataforma/biblioteca" element={<Biblioteca />} />
-          <Route path="/plataforma/secretaria" element={<Secretaria />} />
-          <Route path="/plataforma/professores" element={<SalaProfessores />} />
           <Route path="/plataforma/chat" element={<ChatPanel />} />
+          
+          {/* Admin / Teacher only routes */}
+          <Route path="/plataforma/secretaria" element={<ProtectedRoute requiredRole="admin"><Secretaria /></ProtectedRoute>} />
+          <Route path="/plataforma/professores" element={<ProtectedRoute requiredRole="professor"><SalaProfessores /></ProtectedRoute>} />
         </Route>
       </Routes>
       {!isPlataforma && <Footer />}
       {!isPlataforma && <ScrollToTopButton />}
-    </>
+    </AuthProvider>
   );
 }
 
