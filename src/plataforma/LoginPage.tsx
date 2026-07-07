@@ -61,7 +61,7 @@ export default function LoginPage() {
         </div>
 
         <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-          <Link to="/plataforma" style={{ fontSize: '0.85rem', color: '#94A3B8', textDecoration: 'none' }}>
+          <Link to="/plataforma" className="plat-back-link">
             ← Voltar para a plataforma
           </Link>
         </div>

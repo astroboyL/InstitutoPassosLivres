@@ -135,15 +135,31 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  padding: 6px 0;
+  padding: 8px 0;
   font-size: 0.65rem;
   font-weight: 500;
   color: var(--c-text-muted);
-  transition: var(--trans);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.plat-bottom-link:active {
+  transform: scale(0.9);
 }
 
 .plat-bottom-link.active {
   color: var(--c-primary);
+}
+
+.plat-bottom-link.active::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  background: var(--c-primary);
+  border-radius: 50%;
 }
 
 /* ── Mobile Sidebar Overlay ───────────────────────────────────── */
@@ -606,6 +622,25 @@
   justify-content: center;
   padding: 24px;
   background: var(--c-bg-off);
+  position: relative;
+}
+
+.plat-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--c-text-muted);
+  text-decoration: none;
+  transition: var(--trans);
+  padding: 8px 12px;
+  border-radius: 100px;
+}
+
+.plat-back-link:hover {
+  background: rgba(0,0,0,0.05);
+  color: var(--c-forest);
 }
 
 .plat-auth-card {
@@ -669,6 +704,32 @@
 /* ── Plataforma Home ──────────────────────────────────────────── */
 .plat-home {
   min-height: 100vh;
+  position: relative;
+}
+
+.plat-home-back {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: var(--trans);
+  z-index: 10;
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.plat-home-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateX(-4px);
 }
 
 .plat-home-hero {

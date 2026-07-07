@@ -47,7 +47,7 @@ export default function CadastroSelecao() {
   return (
     <div className="plat-auth-page">
       <div className="plat-cadastro-card">
-        <Link to="/plataforma" className="btn btn-sm" style={{ marginBottom: '1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+        <Link to="/plataforma" className="plat-back-link" style={{ marginBottom: '1.5rem' }}>
           <ArrowLeft size={16} /> Voltar à Plataforma
         </Link>
 
