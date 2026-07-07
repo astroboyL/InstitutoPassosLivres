@@ -4,6 +4,7 @@ import {
   LayoutDashboard, BookOpen, Library, Building2, Users, 
   MessageCircle, LogOut, Menu, X, GraduationCap 
 } from 'lucide-react';
+import { useAuth } from '../lib/auth';
 
 const navItems = [
   { path: '/plataforma/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -17,6 +18,7 @@ const navItems = [
 export default function Sidebar() {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { role } = useAuth();
 
   return (
     <>
@@ -45,6 +47,10 @@ export default function Sidebar() {
 
         <nav className="plat-sidebar-nav">
           {navItems.map(item => {
+            // Hide admin routes if not admin
+            if (item.path === '/plataforma/secretaria' && role !== 'admin') return null;
+            if (item.path === '/plataforma/professores' && role !== 'professor' && role !== 'admin') return null;
+
             const Icon = item.icon;
             const isActive = location.pathname === item.path || location.pathname.startsWith(item.path + '/');
             return (
